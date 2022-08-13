@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo DOM con JavaScript</title>
+</head>
+
+<body>
+    <h1 id="titulo">Manejo DOM con JavaScript</h1>
+    <br>
+    <div id="contenido"></div>
+    <script>
+        document.getElementById("titulo").onclick = cambiarTexto;
+
+        function cambiarTexto() {
+            document.getElementById("contenido").innerHTML = "Nuevo contenido";
+        }
+    </script>
+</body>
+
+</html>
